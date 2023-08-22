@@ -141,6 +141,10 @@ article{
     padding: 60px;
 }
 
+.value .wrapper{
+    padding-top: 20px;
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -215,6 +219,17 @@ p{
     max-width: 600px;
     margin: 20px;
 }
+
+/* --------------- 2019 ------------------*/
+.year{
+   justify-content: flex-start;
+}
+
+.year h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
 
 
 /* --------------- Footer ----------------*/
