@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="stail.css">
+        <link rel="stylesheet" href="dist/output.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link href="aset/logosekalian.svg" rel="icon">
         <title>My Life</title>
@@ -31,7 +34,7 @@
             </nav>
             
         </header>
-        <main id="inside"> 
+        <main id="inside flex"> 
             <div id="content" class="wrapper">
                 <article class="card">
                     <div>
@@ -72,22 +75,249 @@
                 </div>
             </div>
 
-            <div id="content" class="wrapper year">
-                <div>
-                    <h2>2019</h2>
+            <div id="content" class="justify-start mt-8 pb-4 border-b-2 border-green-600 cursor-pointer  shrink-0 mx-auto ">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-4xl font-bold">2019</h2>
                     <svg width="15" height="10" viewBox="0 0 42 25">
                         <path 
                         d="M3 3L21 21L39 3"
                         stroke="white"
                         stroke-width="7"
                         stroke-linecap="round"
-                    />
+                        />
                     </svg>
                 </div>
-                <div>
-                    
+                <div class="">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod? Voluptatem nemo autem voluptatum repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolore harum placeat temporibus aut. Consectetur quibusdam ut id ex magnam sit, enim autem fugiat possimus sapiente inventore maxime voluptatem placeat.
+                    </p>
+                    <!--
+                    <div class="relative w-[600px] mx-auto">
+                        <div class="slide relative">
+                            <img class="w-full h-[300px] object-cover" src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg" alt=""/>
+                            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower One Caption</div>
+                        </div>
+                
+                        <div class="slide relative">
+                            <img class="w-full h-[300px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg" alt=""/>
+                            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Two Caption</div>
+                        </div>
+                
+                        <div class="slide relative">
+                            <img class="w-full h-[300px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg" alt=""/>
+                            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Three Caption
+                            </div>
+                        </div>
+                
+                        <!-- The previous button 
+                        <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                            onclick="moveSlide(-1)">❮</a>
+                
+                        <!-- The next button 
+                        <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                            onclick="moveSlide(1)">❯</a>
+                        -->
                 </div>
-            </div>
+                <div class="container">
+                    <div class="swiper tranding-slider">
+                      <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg" alt="Tranding">
+                          </div>
+                          <div class="tranding-slide-content">
+                            <h1 class="food-price">$20</h1>
+                            <div class="tranding-slide-content-bottom">
+                              <h2 class="food-name">
+                                Special Pizza
+                              </h2>
+                              <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                </div>
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg" alt="Tranding">
+                          </div>
+                          <div class="tranding-slide-content">
+                            <h1 class="food-price">$20</h1>
+                            <div class="tranding-slide-content-bottom">
+                              <h2 class="food-name">
+                                Meat Ball
+                              </h2>
+                              <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                </div>
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg" alt="Tranding">
+                          </div>
+                          <div class="tranding-slide-content">
+                            <h1 class="food-price">$40</h1>
+                            <div class="tranding-slide-content-bottom">
+                              <h2 class="food-name">
+                                Burger
+                              </h2>
+                              <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                </div>
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg" alt="Tranding">
+                          </div>
+                          <div class="tranding-slide-content">
+                            <h1 class="food-price">$15</h1>
+                            <div class="tranding-slide-content-bottom">
+                              <h2 class="food-name">
+                                Frish Curry
+                              </h2>
+                              <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                </div>
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg" alt="Tranding">
+                          </div>
+                          <div class="tranding-slide-content">
+                            <h1 class="food-price">$15</h1>
+                            <div class="tranding-slide-content-bottom">
+                              <h2 class="food-name">
+                                Pane Cake
+                              </h2>
+                              <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                </div>
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg" alt="Tranding">
+                          </div>
+                          <div class="tranding-slide-content">
+                            <h1 class="food-price">$20</h1>
+                            <div class="tranding-slide-content-bottom">
+                              <h2 class="food-name">
+                                Vanilla cake
+                              </h2>
+                              <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                </div>
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                          <div class="tranding-slide-img">
+                            <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg" alt="Tranding">
+                          </div>
+                          <div class="tranding-slide-content">
+                            <h1 class="food-price">$8</h1>
+                            <div class="tranding-slide-content-bottom">
+                              <h2 class="food-name">
+                                Straw Cake
+                              </h2>
+                              <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                </div>
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Slide-end -->
+                      </div>
+            
+                      <div class="tranding-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                          <ion-icon name="arrow-back-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                          <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+            
+            
+                    <!-- The dots -->
+                    <div class="flex justify-center items-center space-x-5">
+                        <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+                        <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+                        <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+                    </div>
+                    </div>
+                </div> 
+            </div>  
                 
             
         </main>
@@ -117,16 +347,9 @@
         </footer>
     </body>
 
-    <script>
-        document.addEventListener('scroll', () =>{
-            const nav = document.querySelector('nav');
-  
-            if(window.scrollY > 0){
-                nav.classList.add('scrolled');
-            } else{
-                nav.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./effect.js"></script>
     
 </html>

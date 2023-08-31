@@ -1,0 +1,23 @@
+{
+  "name": "poject_akhir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "effect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/399strix/project_aboutme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/399strix/project_aboutme/issues"
+  },
+  "homepage": "https://github.com/399strix/project_aboutme#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
